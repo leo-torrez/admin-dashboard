@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TITULO_CHAMADA_LOGIN } from '../../../constants/constants-titulo';
+import { TITLE_PAGE_LOGIN } from '@shared/constants/label-constants';
 
 @Component({
   selector: 'app-login',
@@ -7,7 +7,7 @@ import { TITULO_CHAMADA_LOGIN } from '../../../constants/constants-titulo';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-  tituloChamadaLogin = TITULO_CHAMADA_LOGIN;
+  titleLogin = TITLE_PAGE_LOGIN;
   constructor() {}
 
   ngOnInit() {}

@@ -1,7 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "src",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -14,7 +14,13 @@
     "typeRoots": ["node_modules/@types"],
     "lib": ["es2018", "dom"],
     "types": ["jest"],
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "paths": {
+      "@shared/*": ["app/shared/*"],
+      "@pages/*": ["app/pages/*"],
+      "@assets/*": ["assets/*"],
+      "@env/*": ["environments/*"]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
